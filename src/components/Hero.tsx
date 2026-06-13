@@ -1,8 +1,12 @@
 import React from "react";
 import { Sparkles, ArrowRight, Bed, MapPin, ShieldCheck } from "lucide-react";
 
+interface HeroProps {
+  onOpenRulesModal: () => void;
+}
+
 // ── Component ─────────────────────────────────────────────────────────────────
-export default function Hero() {
+export default function Hero({ onOpenRulesModal }: HeroProps) {
   return (
     <section
       id="home"
@@ -54,15 +58,15 @@ export default function Hero() {
               <span>Sewa Kamar Sekarang</span>
               <ArrowRight className="w-4 h-4" />
             </a>
-            <a
-              href="#keunggulan"
+            <button
+              onClick={onOpenRulesModal}
               id="hero-secondary-cta"
               className="w-full sm:w-auto px-8 py-3.5 bg-white text-gray-800
                          border border-gray-200 rounded-xl font-semibold
-                         transition-all text-center flex items-center justify-center gap-1.5"
+                         transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer"
             >
-              Fasilitas Bersama
-            </a>
+              Tata Tertib Kost
+            </button>
           </div>
 
           {/* Mini statistik */}
