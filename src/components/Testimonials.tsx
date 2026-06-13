@@ -16,7 +16,7 @@ export default function Testimonials() {
           {testimonials.map((t: Testimonial) => (
             <div
               key={t.id}
-              className="bg-white rounded-2xl p-8 border border-gray-150 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow relative"
+              className="bg-white rounded-2xl p-8 border border-gray-150 shadow-xs flex flex-col justify-between relative"
             >
               {/* Accent quote graphics */}
               <div className="absolute top-6 right-8 text-6xl text-teal-700/10 font-serif leading-none select-none pointer-events-none">

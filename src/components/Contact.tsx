@@ -45,7 +45,7 @@ export default function Contact() {
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-teal-700 font-extrabold inline-flex items-center gap-1 hover:underline"
+                    className="text-xs text-teal-700 font-extrabold inline-flex items-center gap-1"
                   >
                     Chat langsung di WhatsApp
                     <ExternalLink className="w-3 h-3" />

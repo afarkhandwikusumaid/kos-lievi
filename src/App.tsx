@@ -45,7 +45,7 @@ export default function App() {
 
   const handleCloseModal = () => setSelectedRoom(null);
 
-  const handleWhatsAppBooking = (room: Room) => {
+  const handleWhatsAppBooking = (room: Room, selectedRoomNo: string, selectedPackage: string) => {
     const dateLabel = bookingDate
       ? new Date(bookingDate).toLocaleDateString("id-ID", {
           year: "numeric", month: "long", day: "numeric",
@@ -53,11 +53,13 @@ export default function App() {
       : "Segera";
 
     const message = [
-      `Halo Pengelola Kos Lievi,`,
-      `saya tertarik untuk booking ${room.name} (Undip Batang).`,
-      `Rencana Masuk: ${dateLabel}.`,
-      `Apakah kamar ini masih kosong? Terima kasih.`,
-    ].join(" ");
+      `Halo Pengelola Kos Lievi, saya tertarik untuk booking hunian:`,
+      `• Pilihan Kamar: ${selectedRoomNo}`,
+      `• Pilihan Paket: ${selectedPackage}`,
+      `• Rencana Masuk: ${dateLabel}`,
+      ``,
+      `Apakah kamar ini masih kosong? Terima kasih.`
+    ].join("\n");
 
     window.open(`https://wa.me/6285944629716?text=${encodeURIComponent(message)}`, "_blank");
   };

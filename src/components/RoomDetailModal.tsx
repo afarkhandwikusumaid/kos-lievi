@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { X, Info, MessageSquare } from "lucide-react";
 import { Room } from "../data";
 
@@ -8,14 +8,14 @@ interface RoomDetailModalProps {
   minDateString: string;
   bookingDate: string;
   setBookingDate: (date: string) => void;
-  onWhatsAppBooking: (room: Room) => void;
+  onWhatsAppBooking: (room: Room, roomNo: string, sewaPackage: string) => void;
   modalMainImg: string;
   setModalMainImg: (img: string) => void;
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
-// Modal detail kamar: galeri foto, spesifikasi lengkap, pilih tanggal masuk,
-// dan tombol booking langsung via WhatsApp.
+// Modal detail kamar: galeri foto, spesifikasi lengkap, pilih nomor kamar,
+// pilih paket sewa, pilih tanggal masuk, dan tombol booking langsung via WhatsApp.
 export default function RoomDetailModal({
   room,
   onClose,
@@ -26,6 +26,10 @@ export default function RoomDetailModal({
   modalMainImg,
   setModalMainImg,
 }: RoomDetailModalProps) {
+  // State pilihan nomor kamar & paket sewa
+  const [selectedRoomNo, setSelectedRoomNo] = useState("Kamar 01");
+  const [selectedPackage, setSelectedPackage] = useState("1 Bulan (Rp 750.000)");
+
   return (
     // Overlay — klik di luar modal untuk menutup
     <div
@@ -47,8 +51,7 @@ export default function RoomDetailModal({
           id="modal-close-btn"
           aria-label="Tutup Modal"
           className="absolute top-4 right-4 z-50 w-8 h-8 rounded-full bg-white/90
-                     backdrop-blur-xs shadow-md border hover:bg-red-50 hover:text-red-500
-                     hover:border-red-100 flex items-center justify-center text-gray-500
+                     backdrop-blur-xs shadow-md border flex items-center justify-center text-gray-500
                      transition-colors"
         >
           <X className="w-4 h-4" />
@@ -56,7 +59,7 @@ export default function RoomDetailModal({
 
         {/* ── Kolom Kiri: Galeri Foto ─────────────────────────────────────── */}
         <div className="p-6 bg-gray-50 border-r border-gray-100 flex flex-col justify-between
-                        overflow-y-auto max-h-[40vh] md:max-h-none">
+                        overflow-y-auto max-h-[40vh] md:max-h-[85vh]">
 
           {/* Foto utama */}
           <div className="aspect-4/3 bg-gray-150 rounded-xl overflow-hidden mb-4 relative shrink-0">
@@ -83,7 +86,7 @@ export default function RoomDetailModal({
                 className={`aspect-square rounded-lg overflow-hidden bg-gray-200 border-2 transition-all ${
                   modalMainImg === imgUrl
                     ? "border-teal-700 shadow-sm opacity-100 scale-95"
-                    : "border-transparent opacity-75 hover:opacity-100"
+                    : "border-transparent opacity-75"
                 }`}
               >
                 <img src={imgUrl} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
@@ -104,9 +107,9 @@ export default function RoomDetailModal({
           </div>
         </div>
 
-        {/* ── Kolom Kanan: Detail, Form Tanggal & Tombol Booking ─────────── */}
+        {/* ── Kolom Kanan: Detail, Form Pilihan & Tombol Booking ─────────── */}
         <div className="p-6 md:p-8 flex flex-col justify-between overflow-y-auto
-                        max-h-[50vh] md:max-h-none">
+                        max-h-[50vh] md:max-h-[85vh]">
           <div className="space-y-6">
 
             {/* Nama & badge */}
@@ -115,10 +118,6 @@ export default function RoomDetailModal({
                 <span className="px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase
                                  tracking-wider border bg-teal-50 border-teal-150 text-teal-700">
                   Bisa Dipesan
-                </span>
-                <span className="px-2 py-0.5 rounded-md bg-gray-100 text-[9px] font-black
-                                 uppercase tracking-wider text-teal-700 border border-teal-100">
-                  DELUXE PREMIUM
                 </span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-black text-gray-900 leading-tight">
@@ -170,35 +169,87 @@ export default function RoomDetailModal({
               </ul>
             </div>
 
-            {/* Form pilih tanggal masuk */}
-            <div className="border-t border-gray-100 pt-5">
-              <label
-                htmlFor="modal-date-picker"
-                className="block text-xs font-black text-gray-400 uppercase tracking-widest mb-1.5"
-              >
-                Rencana Tanggal Masuk Kost:
-              </label>
-              <input
-                type="date"
-                id="modal-date-picker"
-                min={minDateString}
-                value={bookingDate}
-                onChange={(e) => setBookingDate(e.target.value)}
-                className="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-xl
-                           text-sm focus:outline-none focus:border-teal-700"
-              />
+            {/* Form Pilihan Dropdown & Tanggal */}
+            <div className="border-t border-gray-100 pt-5 space-y-4">
+              {/* Pilihan Nomor Kamar */}
+              <div>
+                <label
+                  htmlFor="modal-room-no"
+                  className="block text-xs font-black text-gray-400 uppercase tracking-widest mb-1.5"
+                >
+                  Pilihan Nomor Kamar:
+                </label>
+                <select
+                  id="modal-room-no"
+                  value={selectedRoomNo}
+                  onChange={(e) => setSelectedRoomNo(e.target.value)}
+                  className="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-xl
+                             text-sm focus:outline-none focus:border-teal-700"
+                >
+                  {Array.from({ length: 10 }, (_, i) => {
+                    const no = String(i + 1).padStart(2, "0");
+                    return (
+                      <option key={no} value={`Kamar ${no}`}>
+                        Kamar {no}
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
+
+              {/* Pilihan Paket Sewa */}
+              <div>
+                <label
+                  htmlFor="modal-package"
+                  className="block text-xs font-black text-gray-400 uppercase tracking-widest mb-1.5"
+                >
+                  Pilihan Paket Sewa:
+                </label>
+                <select
+                  id="modal-package"
+                  value={selectedPackage}
+                  onChange={(e) => setSelectedPackage(e.target.value)}
+                  className="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-xl
+                             text-sm focus:outline-none focus:border-teal-700"
+                >
+                  <option value="1 Hari (Rp 100.000)">1 Hari (Rp 100.000)</option>
+                  <option value="1 Bulan (Rp 750.000)">1 Bulan (Rp 750.000)</option>
+                  <option value="3 Bulan (Rp 2.250.000)">3 Bulan (Rp 2.250.000)</option>
+                  <option value="6 Bulan (Rp 4.500.000)">6 Bulan (Rp 4.500.000)</option>
+                  <option value="1 Tahun (Rp 9.000.000)">1 Tahun (Rp 9.000.000)</option>
+                </select>
+              </div>
+
+              {/* Rencana Tanggal Masuk */}
+              <div>
+                <label
+                  htmlFor="modal-date-picker"
+                  className="block text-xs font-black text-gray-400 uppercase tracking-widest mb-1.5"
+                >
+                  Rencana Tanggal Masuk Kost:
+                </label>
+                <input
+                  type="date"
+                  id="modal-date-picker"
+                  min={minDateString}
+                  value={bookingDate}
+                  onChange={(e) => setBookingDate(e.target.value)}
+                  className="w-full px-4 py-2 bg-gray-50 border border-gray-200 rounded-xl
+                             text-sm focus:outline-none focus:border-teal-700"
+                />
+              </div>
             </div>
           </div>
 
           {/* Tombol Booking WhatsApp */}
           <div className="pt-6 mt-6 border-t border-gray-100">
             <button
-              onClick={() => onWhatsAppBooking(room)}
+              onClick={() => onWhatsAppBooking(room, selectedRoomNo, selectedPackage)}
               id="submit-booking-wa"
-              className="w-full py-3.5 bg-teal-700 hover:bg-teal-800 text-white rounded-xl
+              className="w-full py-3.5 bg-teal-700 text-white rounded-xl
                          font-bold flex items-center justify-center gap-2 transition-all
                          shadow-md shadow-teal-900/10 text-xs tracking-wider uppercase
-                         hover:-translate-y-0.5 cursor-pointer"
+                         cursor-pointer"
             >
               <MessageSquare className="w-4 h-4" />
               <span>Booking Unit via WhatsApp</span>

@@ -67,18 +67,17 @@ export default function Advantages() {
           {advantagesData.map((adv) => (
             <div
               key={adv.id}
-              className="p-4 sm:p-6 bg-gray-50 hover:bg-white rounded-2xl border border-gray-100
-                         hover:border-teal-100 transition-all duration-300 hover:shadow-lg
-                         hover:shadow-teal-900/5 group flex flex-col items-center text-center"
+              className="p-4 sm:p-6 bg-gray-50 rounded-2xl border border-gray-100
+                         transition-all duration-300 group flex flex-col items-center text-center"
             >
               {/* Ikon */}
               <div className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center
-                              mb-4 transition-transform group-hover:scale-110 ${getColorClass(adv.icon)}`}>
+                              mb-4 transition-transform ${getColorClass(adv.icon)}`}>
                 {getIcon(adv.icon)}
               </div>
 
               <h3 className="text-xs sm:text-sm font-bold text-gray-900 mb-1.5 line-clamp-1
-                             group-hover:text-teal-700 transition-colors">
+                             transition-colors">
                 {adv.title}
               </h3>
               <p className="text-[10px] sm:text-xs text-gray-400 leading-relaxed line-clamp-2 sm:line-clamp-3">

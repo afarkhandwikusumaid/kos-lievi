@@ -20,35 +20,35 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 bg-teal-700 rounded-xl flex items-center justify-center text-white shadow-md shadow-teal-900/10 transition-transform group-hover:scale-105">
+            <div className="w-9 h-9 bg-teal-700 rounded-xl flex items-center justify-center text-white shadow-md shadow-teal-900/10 transition-transform">
               <span className="font-extrabold text-base tracking-wider">KL</span>
             </div>
-            <span className="font-black text-xl tracking-tight text-gray-900 group-hover:text-teal-700 transition-colors uppercase">
+            <span className="font-black text-xl tracking-tight text-gray-900 transition-colors uppercase">
               KOS <span className="text-teal-700">LIEVI</span>
             </span>
           </a>
 
           {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-sm font-semibold text-gray-600 hover:text-teal-700 transition-colors">
+            <a href="#home" className="text-sm font-semibold text-gray-600 transition-colors">
               Beranda
             </a>
-            <a href="#keunggulan" className="text-sm font-semibold text-gray-600 hover:text-teal-700 transition-colors">
+            <a href="#keunggulan" className="text-sm font-semibold text-gray-600 transition-colors">
               Keunggulan
             </a>
-            <a href="#cara-booking" className="text-sm font-semibold text-gray-600 hover:text-teal-700 transition-colors">
+            <a href="#cara-booking" className="text-sm font-semibold text-gray-600 transition-colors">
               Cara Booking
             </a>
-            <a href="#kamar" className="text-sm font-semibold text-gray-600 hover:text-teal-700 transition-colors">
+            <a href="#kamar" className="text-sm font-semibold text-gray-600 transition-colors">
               Daftar Kamar
             </a>
-            <a href="#testimoni" className="text-sm font-semibold text-gray-600 hover:text-teal-700 transition-colors">
+            <a href="#testimoni" className="text-sm font-semibold text-gray-600 transition-colors">
               Ulasan
             </a>
-            <a href="#faq" className="text-sm font-semibold text-gray-600 hover:text-teal-700 transition-colors">
+            <a href="#faq" className="text-sm font-semibold text-gray-600 transition-colors">
               FAQ
             </a>
-            <a href="#contact" className="text-sm font-semibold text-gray-600 hover:text-teal-700 transition-colors">
+            <a href="#contact" className="text-sm font-semibold text-gray-600 transition-colors">
               Kontak
             </a>
           </div>
@@ -56,7 +56,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
           <div className="hidden md:flex items-center">
             <a
               href="#kamar"
-              className="px-5 py-2.5 bg-teal-700 text-white rounded-xl font-bold hover:bg-teal-800 transition-all text-xs tracking-wider shadow-sm hover:shadow-teal-900/10 flex items-center gap-1.5"
+              className="px-5 py-2.5 bg-teal-700 text-white rounded-xl font-bold transition-all text-xs tracking-wider shadow-sm flex items-center gap-1.5"
             >
               <Sparkles className="w-3.5 h-3.5 animate-pulse" />
               Pesan Kamar Kost
@@ -66,7 +66,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
           {/* Mobile menu interface btn */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-gray-600 hover:text-teal-700 transition-colors hover:bg-gray-100 rounded-lg focus:outline-none"
+            className="md:hidden p-2 text-gray-600 transition-colors rounded-lg focus:outline-none"
             aria-label="Toggle Mobile Menu"
             id="mobile-menu-btn"
           >
@@ -89,7 +89,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
             <div className="space-y-6">
               <div className="flex items-center justify-between border-b pb-4">
                 <span className="font-extrabold text-lg text-teal-700 uppercase">KOS LIEVI MENU</span>
-                <button onClick={() => setMobileMenuOpen(false)} className="p-1.5 hover:bg-gray-100 rounded-full text-gray-500">
+                <button onClick={() => setMobileMenuOpen(false)} className="p-1.5 rounded-full text-gray-500">
                   <X className="w-5 h-5" />
                 </button>
               </div>
@@ -98,49 +98,49 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
                 <a
                   href="#home"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-semibold text-gray-700 hover:text-teal-700 py-1 transition-colors border-b border-gray-50"
+                  className="text-base font-semibold text-gray-700 py-1 transition-colors border-b border-gray-50"
                 >
                   Beranda
                 </a>
                 <a
                   href="#keunggulan"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-semibold text-gray-700 hover:text-teal-700 py-1 transition-colors border-b border-gray-50"
+                  className="text-base font-semibold text-gray-700 py-1 transition-colors border-b border-gray-50"
                 >
                   Keunggulan
                 </a>
                 <a
                   href="#cara-booking"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-semibold text-gray-700 hover:text-teal-700 py-1 transition-colors border-b border-gray-50"
+                  className="text-base font-semibold text-gray-700 py-1 transition-colors border-b border-gray-50"
                 >
                   Cara Booking
                 </a>
                 <a
                   href="#kamar"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-semibold text-gray-700 hover:text-teal-700 py-1 transition-colors border-b border-gray-50"
+                  className="text-base font-semibold text-gray-700 py-1 transition-colors border-b border-gray-50"
                 >
                   Daftar Kamar
                 </a>
                 <a
                   href="#testimoni"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-semibold text-gray-700 hover:text-teal-700 py-1 transition-colors border-b border-gray-50"
+                  className="text-base font-semibold text-gray-700 py-1 transition-colors border-b border-gray-50"
                 >
                   Ulasan
                 </a>
                 <a
                   href="#faq"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-semibold text-gray-700 hover:text-teal-700 py-1 transition-colors border-b border-gray-50"
+                  className="text-base font-semibold text-gray-700 py-1 transition-colors border-b border-gray-50"
                 >
                   FAQ
                 </a>
                 <a
                   href="#contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-semibold text-gray-700 hover:text-teal-700 py-1 transition-colors"
+                  className="text-base font-semibold text-gray-700 py-1 transition-colors"
                 >
                   Kontak
                 </a>
@@ -150,7 +150,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
             <a
               href="#kamar"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full py-3 bg-teal-700 text-white rounded-xl font-bold hover:bg-teal-800 text-center transition-all shadow-sm"
+              className="w-full py-3 bg-teal-700 text-white rounded-xl font-bold text-center transition-all shadow-sm"
               id="drawer-cta-btn"
             >
               Pesan Kamar Sekarang

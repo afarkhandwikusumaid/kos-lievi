@@ -34,7 +34,7 @@ export default function BookingSteps() {
           {bookingSteps.map((step: BookingStep) => (
             <div
               key={step.step}
-              className="bg-white rounded-2xl p-6 border border-gray-100 shadow-xs hover:shadow-md transition-shadow relative z-10 text-center flex flex-col items-center"
+              className="bg-white rounded-2xl p-6 border border-gray-100 shadow-xs relative z-10 text-center flex flex-col items-center"
             >
               <div className="w-14 h-14 bg-teal-50 border border-teal-100 rounded-full flex items-center justify-center text-teal-700 mb-4 font-black text-xl shadow-xs">
                 {getStepIcon(step.icon)}

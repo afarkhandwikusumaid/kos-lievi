@@ -29,22 +29,22 @@ export default function Footer() {
             Tautan Pintar
           </h4>
           <div className="flex flex-col gap-2 text-xs">
-            <a href="#home" className="hover:text-white transition-colors">
+            <a href="#home">
               Utama &amp; Panduan
             </a>
-            <a href="#keunggulan" className="hover:text-white transition-colors">
+            <a href="#keunggulan">
               Fasilitas Keunggulan
             </a>
-            <a href="#cara-booking" className="hover:text-white transition-colors">
+            <a href="#cara-booking">
               Sistem Cara Booking
             </a>
-            <a href="#kamar" className="hover:text-white transition-colors">
+            <a href="#kamar">
               Semua 10 Kamar riil
             </a>
-            <a href="#testimoni" className="hover:text-white transition-colors">
+            <a href="#testimoni">
               Ulasan Mahasiswa
             </a>
-            <a href="#contact" className="hover:text-white transition-colors">
+            <a href="#contact">
               Peta Lokasi Google Maps
             </a>
           </div>

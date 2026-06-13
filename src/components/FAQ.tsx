@@ -20,7 +20,7 @@ export default function FAQ({ openFaqId, setOpenFaqId }: FAQProps) {
           <div className="pt-4 hidden md:block">
             <a
               href="#contact"
-              className="inline-flex items-center gap-1.5 text-xs text-teal-700 hover:text-teal-800 font-bold tracking-wider uppercase border-b-2 border-teal-700/20 hover:border-teal-800/40 pb-0.5 transition-all"
+              className="inline-flex items-center gap-1.5 text-xs text-teal-700 font-bold tracking-wider uppercase border-b-2 border-teal-700/20 pb-0.5 transition-all"
             >
               Hubungi Pengelola Langsung
               <ArrowRight className="w-3.5 h-3.5" />
@@ -34,7 +34,7 @@ export default function FAQ({ openFaqId, setOpenFaqId }: FAQProps) {
             return (
               <div
                 key={faq.id}
-                className="border border-gray-200 rounded-xl overflow-hidden bg-[#F9FAFB]/50 transition-colors hover:border-gray-300"
+                className="border border-gray-200 rounded-xl overflow-hidden bg-[#F9FAFB]/50 transition-colors"
               >
                 <button
                   onClick={() => setOpenFaqId(isOpen ? null : faq.id)}

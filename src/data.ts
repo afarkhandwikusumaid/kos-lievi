@@ -114,12 +114,12 @@ export const advantagesData: Advantage[] = [
 
 export const roomsData: Room[] = [
   {
-    id: "KM-01",
-    name: "Kamar 01",
+    id: "KM-ALL",
+    name: "Kamar Kost Deluxe",
     status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Kamar rapi bersih dengan ventilasi maksimal",
+    price: 750000,
+    priceFormatted: "Rp 750.000",
+    subtitle: "Tipe Deluxe Premium - Kamar rapi bersih dengan fasilitas lengkap siap huni",
     type: "Cowo-Cewe",
     specifications: {
       ukuran: "3 x 3.5 Meter",
@@ -128,236 +128,11 @@ export const roomsData: Room[] = [
       meja: "Meja Belajar Minimalis & Kursi Nyaman",
       kipas: "Kipas Angin Dinding Remote Control",
       kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
+      listrik: "Free Token Listrik",
       lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
     },
     images: [
       "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&h=600&q=80"
-    ]
-  },
-  {
-    id: "KM-02",
-    name: "Kamar 02",
-    status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Kamar rapi bersih dengan gorden blackout modern",
-    type: "Cowo-Cewe",
-    specifications: {
-      ukuran: "3 x 3.5 Meter",
-      kasur: "Single Springbed Comfort Premium",
-      lemari: "Lemari Pakaian 2 Pintu + Cermin",
-      meja: "Meja Belajar Minimalis & Kursi Nyaman",
-      kipas: "Kipas Angin Dinding Remote Control",
-      kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
-      lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
-    },
-    images: [
-      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?auto=format&fit=crop&w=800&h=600&q=80"
-    ]
-  },
-  {
-    id: "KM-03",
-    name: "Kamar 03",
-    status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Interior minimalis nyaman dengan view timur sejuk",
-    type: "Cowo-Cewe",
-    specifications: {
-      ukuran: "3 x 3.5 Meter",
-      kasur: "Single Springbed Comfort Premium",
-      lemari: "Lemari Pakaian 2 Pintu + Cermin",
-      meja: "Meja Belajar Minimalis & Kursi Nyaman",
-      kipas: "Kipas Angin Dinding Remote Control",
-      kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
-      lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
-    },
-    images: [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&h=600&q=80"
-    ]
-  },
-  {
-    id: "KM-04",
-    name: "Kamar 04",
-    status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Kamar ergonomis dengan pencahayaan alami melimpah",
-    type: "Cowo-Cewe",
-    specifications: {
-      ukuran: "3 x 3.5 Meter",
-      kasur: "Single Springbed Comfort Premium",
-      lemari: "Lemari Pakaian 2 Pintu + Cermin",
-      meja: "Meja Belajar Minimalis & Kursi Nyaman",
-      kipas: "Kipas Angin Dinding Remote Control",
-      kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
-      lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
-    },
-    images: [
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?auto=format&fit=crop&w=800&h=600&q=80"
-    ]
-  },
-  {
-    id: "KM-05",
-    name: "Kamar 05",
-    status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Tenang, bebas bising dari jalan raya utama untuk fokus belajar",
-    type: "Cowo-Cewe",
-    specifications: {
-      ukuran: "3 x 3.5 Meter",
-      kasur: "Single Springbed Comfort Premium",
-      lemari: "Lemari Pakaian 2 Pintu + Cermin",
-      meja: "Meja Belajar Minimalis & Kursi Nyaman",
-      kipas: "Kipas Angin Dinding Remote Control",
-      kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
-      lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
-    },
-    images: [
-      "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&h=600&q=80"
-    ]
-  },
-  {
-    id: "KM-06",
-    name: "Kamar 06",
-    status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Akses cepat ke area jemuran dan rooftop bersama",
-    type: "Cowo-Cewe",
-    specifications: {
-      ukuran: "3 x 3.5 Meter",
-      kasur: "Single Springbed Comfort Premium",
-      lemari: "Lemari Pakaian 2 Pintu + Cermin",
-      meja: "Meja Belajar Minimalis & Kursi Nyaman",
-      kipas: "Kipas Angin Dinding Remote Control",
-      kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
-      lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
-    },
-    images: [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?auto=format&fit=crop&w=800&h=600&q=80"
-    ]
-  },
-  {
-    id: "KM-07",
-    name: "Kamar 07",
-    status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Sirkulasi udara segar nan asri menyehatkan",
-    type: "Cowo-Cewe",
-    specifications: {
-      ukuran: "3 x 3.5 Meter",
-      kasur: "Single Springbed Comfort Premium",
-      lemari: "Lemari Pakaian 2 Pintu + Cermin",
-      meja: "Meja Belajar Minimalis & Kursi Nyaman",
-      kipas: "Kipas Angin Dinding Remote Control",
-      kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
-      lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
-    },
-    images: [
-      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&h=600&q=80"
-    ]
-  },
-  {
-    id: "KM-08",
-    name: "Kamar 08",
-    status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Desain modern, tenang, dan tertata rapi estetis",
-    type: "Cowo-Cewe",
-    specifications: {
-      ukuran: "3 x 3.5 Meter",
-      kasur: "Single Springbed Comfort Premium",
-      lemari: "Lemari Pakaian 2 Pintu + Cermin",
-      meja: "Meja Belajar Minimalis & Kursi Nyaman",
-      kipas: "Kipas Angin Dinding Remote Control",
-      kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
-      lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
-    },
-    images: [
-      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&h=600&q=80"
-    ]
-  },
-  {
-    id: "KM-09",
-    name: "Kamar 09",
-    status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Kamar pojok sejuk bebas kebisingan",
-    type: "Cowo-Cewe",
-    specifications: {
-      ukuran: "3 x 3.5 Meter",
-      kasur: "Single Springbed Comfort Premium",
-      lemari: "Lemari Pakaian 2 Pintu + Cermin",
-      meja: "Meja Belajar Minimalis & Kursi Nyaman",
-      kipas: "Kipas Angin Dinding Remote Control",
-      kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
-      lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
-    },
-    images: [
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&h=600&q=80",
-      "https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?auto=format&fit=crop&w=800&h=600&q=80"
-    ]
-  },
-  {
-    id: "KM-10",
-    name: "Kamar 10",
-    status: "Tersedia",
-    price: 850000,
-    priceFormatted: "Rp 850.000",
-    subtitle: "Tipe Deluxe Premium - Double window view dengan intensitas sirkulasi udara superior",
-    type: "Cowo-Cewe",
-    specifications: {
-      ukuran: "3 x 3.5 Meter",
-      kasur: "Single Springbed Comfort Premium",
-      lemari: "Lemari Pakaian 2 Pintu + Cermin",
-      meja: "Meja Belajar Minimalis & Kursi Nyaman",
-      kipas: "Kipas Angin Dinding Remote Control",
-      kamarMandi: "Kamar Mandi Dalam (Shower, Kloset Duduk, Jetshower)",
-      listrik: "Token Listrik 900W Sendiri",
-      lainnya: "Gantungan Baju, Cermin, & Gorden Blackout"
-    },
-    images: [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&h=600&q=80",
       "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&h=600&q=80",
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&h=600&q=80",
       "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&h=600&q=80"
@@ -368,26 +143,26 @@ export const roomsData: Room[] = [
 export const bookingSteps: BookingStep[] = [
   {
     step: 1,
-    title: "Pilih Kamar Idaman",
-    desc: "Lihat katalog 10 kamar kami di bawah, perhatikan status ketersediaan serta spesifikasi di detail tombol.",
+    title: "Pilih Kamar & Paket",
+    desc: "Klik detail pada unit kamar kost, pilih nomor kamar dan jangka waktu/paket sewa yang diinginkan.",
     icon: "search"
   },
   {
     step: 2,
     title: "Tentukan Tanggal Masuk",
-    desc: "Klik 'Detail & Booking' pada kamar yang siap huni. Isikan perkiraan tanggal mulai sewa/masuk kos pada form yang disediakan.",
+    desc: "Isikan perkiraan tanggal mulai sewa/masuk kos pada form yang disediakan di dalam modal detail.",
     icon: "calendar"
   },
   {
     step: 3,
     title: "Booking via WhatsApp",
-    desc: "Tekan tombol booking WhatsApp di dalam modal. Sistem akan meluncurkan web/aplikasi WhatsApp dengan format pesan otomatis yang rapi.",
+    desc: "Tekan tombol booking WhatsApp. Sistem akan meluncurkan chat WhatsApp dengan format rincian list pesan otomatis yang rapi.",
     icon: "message-square"
   },
   {
     step: 4,
     title: "Survei & Konfirmasi",
-    desc: "Pengelola akan menyambut Anda di lokasi tumbrep/bandar untuk serah terima DP, peninjauan fisik kamar, serta pemberian kunci masuk resmi.",
+    desc: "Pengelola akan menyambut Anda di lokasi untuk serah terima DP, peninjauan fisik kamar, serta pemberian kunci masuk resmi.",
     icon: "key"
   }
 ];
@@ -401,7 +176,7 @@ export const faqList: FAQItem[] = [
   {
     id: 2,
     question: "Bagaimana sistem kelistrikan di dalam kamar?",
-    answer: "Setiap kamar dilengkapi dengan meteran token listrik sendiri (900W hingga 1300W). Anda dapat membeli pulsa token listrik secara mandiri sesuai dengan pemakaian alat elektronik pribadi Anda (seperti laptop atau dispenser pribadi)."
+    answer: "Kabar gembira! Di Kos Lievi, pemakaian listrik/token sudah gratis (Free Token Listrik). Anda tidak perlu memikirkan biaya listrik tambahan untuk alat elektronik standar Anda."
   },
   {
     id: 3,
@@ -415,8 +190,8 @@ export const faqList: FAQItem[] = [
   },
   {
     id: 5,
-    question: "Bagaimanakah sistem pembayaran dan uang jaminan sewa?",
-    answer: "Pembayaran dilakukan di awal setiap bulannya melalui transfer bank atau tunai kepada pengelola. Anda juga bisa menanyakan diskon sewa menarik jika melakukan pembayaran langsung untuk periode 6 bulan atau 1 tahun penuh."
+    question: "Bagaimanakah sistem pembayaran dan jangka waktu sewa?",
+    answer: "Kami menawarkan fleksibilitas pembayaran harian, bulanan (1 bulan, 3 bulan, 6 bulan), hingga tahunan. Pembayaran dilakukan di awal melalui transfer bank atau tunai kepada pengelola."
   }
 ];
 
@@ -432,7 +207,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Clarissa Shafa",
+    name: "Shafa",
     role: "Mahasiswi S1 Humas",
     origin: "UNDIP PSDKU Batang",
     content: "Sebagai mahasiswi rantau, saya merasa beruntung dapet kamar di Kos Lievi. Kos cowo-cewe di sini sangat aman, gerbang selalu terkunci rapi, lingkungannya tenang gak berisik kendaraan. Kamar adem dan kasur springbed-nya premium bikin tidur nyenyak.",

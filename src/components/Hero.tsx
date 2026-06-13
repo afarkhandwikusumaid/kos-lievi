@@ -47,9 +47,9 @@ export default function Hero() {
             <a
               href="#kamar"
               id="hero-primary-cta"
-              className="w-full sm:w-auto px-8 py-3.5 bg-teal-700 hover:bg-teal-800 text-white
+              className="w-full sm:w-auto px-8 py-3.5 bg-teal-700 text-white
                          rounded-xl font-bold transition-all shadow-md shadow-teal-900/10
-                         hover:-translate-y-0.5 text-center flex items-center justify-center gap-2"
+                         text-center flex items-center justify-center gap-2"
             >
               <span>Sewa Kamar Sekarang</span>
               <ArrowRight className="w-4 h-4" />
@@ -57,9 +57,9 @@ export default function Hero() {
             <a
               href="#keunggulan"
               id="hero-secondary-cta"
-              className="w-full sm:w-auto px-8 py-3.5 bg-white hover:bg-gray-50 text-gray-800
-                         border border-gray-200 hover:border-gray-300 rounded-xl font-semibold
-                         transition-all hover:-translate-y-0.5 text-center flex items-center justify-center gap-1.5"
+              className="w-full sm:w-auto px-8 py-3.5 bg-white text-gray-800
+                         border border-gray-200 rounded-xl font-semibold
+                         transition-all text-center flex items-center justify-center gap-1.5"
             >
               Fasilitas Bersama
             </a>
@@ -69,7 +69,7 @@ export default function Hero() {
           <div className="pt-8 border-t border-gray-150 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
 
             <div className="flex items-center gap-3 bg-teal-50/50 px-4 py-3.5 rounded-2xl
-                            border border-teal-100/50 shadow-xs hover:shadow-md transition-all">
+                            border border-teal-100/50 shadow-xs transition-all">
               <div className="w-10 h-10 bg-teal-700 text-white rounded-xl flex items-center
                               justify-center shadow-sm shrink-0">
                 <Bed className="w-5 h-5" />
@@ -81,7 +81,7 @@ export default function Hero() {
             </div>
 
             <div className="flex items-center gap-3 bg-amber-50/50 px-4 py-3.5 rounded-2xl
-                            border border-amber-100/50 shadow-xs hover:shadow-md transition-all">
+                            border border-amber-100/50 shadow-xs transition-all">
               <div className="w-10 h-10 bg-amber-600 text-white rounded-xl flex items-center
                               justify-center shadow-sm shrink-0">
                 <MapPin className="w-5 h-5" />
@@ -93,7 +93,7 @@ export default function Hero() {
             </div>
 
             <div className="flex items-center gap-3 bg-emerald-50/50 px-4 py-3.5 rounded-2xl
-                            border border-emerald-100/50 shadow-xs hover:shadow-md transition-all">
+                            border border-emerald-100/50 shadow-xs transition-all">
               <div className="w-10 h-10 bg-emerald-700 text-white rounded-xl flex items-center
                               justify-center shadow-sm shrink-0">
                 <ShieldCheck className="w-5 h-5" />
@@ -123,7 +123,7 @@ export default function Hero() {
               <img
                 src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80"
                 alt="Interior kamar Kos Lievi yang rapi dan premium"
-                className="w-full h-full object-cover rounded-xl transition-transform duration-700 hover:scale-[1.03]"
+                className="w-full h-full object-cover rounded-xl transition-transform duration-700"
               />
             </div>
 

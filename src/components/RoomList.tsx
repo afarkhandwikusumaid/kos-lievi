@@ -22,15 +22,17 @@ export default function RoomList({ rooms, onOpenModal }: RoomListProps) {
             Pilih Kamar Kost Anda
           </h2>
           <p className="text-gray-500 text-base font-semibold">
-            Terdapat 10 kamar deluxe — semua siap dipesan.
+            Unit Kamar Kost Premium di Kos Lievi siap dipesan.
           </p>
         </div>
 
-        {/* Grid Kamar: 2 kolom di mobile, 3 kolom di desktop */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-          {rooms.map((room) => (
-            <RoomCard key={room.id} room={room} onOpenModal={onOpenModal} />
-          ))}
+        {/* Centered Single Room Card */}
+        <div className="flex justify-center">
+          <div className="w-full max-w-md">
+            {rooms.map((room) => (
+              <RoomCard key={room.id} room={room} onOpenModal={onOpenModal} />
+            ))}
+          </div>
         </div>
 
       </div>
