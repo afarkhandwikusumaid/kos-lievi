@@ -74,10 +74,9 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Embedded Live Google Maps container targeting Bandar */}
-          <div className="lg:col-span-7 bg-white p-3 rounded-2xl border border-gray-150 shadow-xs aspect-4/3 lg:aspect-auto flex flex-col justify-between overflow-hidden">
+          <div className="lg:col-span-7 bg-white p-3 rounded-2xl border border-gray-150 shadow-xs h-[380px] lg:h-auto flex flex-col overflow-hidden">
             <iframe
-              className="w-full h-full rounded-xl border border-gray-100 min-h-[350px]"
+              className="w-full h-full rounded-xl border border-gray-100"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.330882103597!2d109.7993839!3d-7.0633913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7017003e502977%3A0x2afb78968f9a8c73!2sLivie%20kost!5e0!3m2!1sid!2sid!4v1718312000000!5m2!1sid!2sid"
               allowFullScreen={true}
               loading="lazy"
