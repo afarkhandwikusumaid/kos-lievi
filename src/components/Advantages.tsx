@@ -76,11 +76,10 @@ export default function Advantages() {
                 {getIcon(adv.icon)}
               </div>
 
-              <h3 className="text-xs sm:text-sm font-bold text-gray-900 mb-1.5 line-clamp-1
-                             transition-colors">
+              <h3 className="text-xs sm:text-sm font-bold text-gray-900 mb-1.5 transition-colors">
                 {adv.title}
               </h3>
-              <p className="text-[10px] sm:text-xs text-gray-400 leading-relaxed line-clamp-2 sm:line-clamp-3">
+              <p className="text-[10px] sm:text-xs text-gray-400 leading-relaxed">
                 {adv.desc}
               </p>
             </div>
