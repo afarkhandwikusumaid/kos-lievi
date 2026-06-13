@@ -13,10 +13,10 @@ export default function Hero() {
       <div className="absolute right-0 top-0 w-96 h-96 bg-teal-100/20 rounded-full blur-3xl -z-10" />
       <div className="absolute left-10 bottom-10 w-72 h-72 bg-amber-100/10 rounded-full blur-3xl -z-10" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
         {/* ── Kolom Kiri: Teks & CTA ─────────────────────────────────────────── */}
-        <div className="md:col-span-7 space-y-6 text-center md:text-left">
+        <div className="lg:col-span-7 space-y-6 text-center lg:text-left order-2 lg:order-1">
 
           {/* Badge promo */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-amber-50 text-amber-800
@@ -110,7 +110,7 @@ export default function Hero() {
         </div>
 
         {/* ── Kolom Kanan: Foto Utama ────────────────────────────────────────── */}
-        <div className="md:col-span-5 relative mt-6 md:mt-0">
+        <div className="lg:col-span-5 relative mt-6 lg:mt-0 order-1 lg:order-2">
           <div className="relative mx-auto max-w-md md:max-w-none">
 
             {/* Cincin dekoratif */}

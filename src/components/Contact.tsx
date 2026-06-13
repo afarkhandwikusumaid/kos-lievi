@@ -23,9 +23,6 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-sm text-gray-900 mb-1">Alamat Lengkap Kos</h4>
-                  <p className="text-xs text-gray-500 leading-relaxed uppercase tracking-wider font-mono bg-gray-50 px-2 py-1 rounded-md mb-2 inline-block text-teal-700 font-bold border border-gray-200">
-                    Plus Code: WRP2+JQR
-                  </p>
                   <p className="text-xs text-gray-500 leading-relaxed font-semibold">
                     Kampung Baru dukuh cempoko, Mulyo, Tumbrep, Kec. Bandar, Kabupaten Batang, Jawa Tengah 51254
                   </p>
@@ -81,11 +78,11 @@ export default function Contact() {
           <div className="lg:col-span-7 bg-white p-3 rounded-2xl border border-gray-150 shadow-xs aspect-4/3 lg:aspect-auto flex flex-col justify-between overflow-hidden">
             <iframe
               className="w-full h-full rounded-xl border border-gray-100 min-h-[350px]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.183060163908!2d109.79427065!3d-6.9535092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e702ffd8a017d83%3A0x6b2bdee0ceea5e89!2sTumbrep%2C%20Bandar%2C%20Batang%20Regency%2C%20Central%20Java!5e0!3m2!1sid!2sid!4v1714000000000!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.330882103597!2d109.7993839!3d-7.0633913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7017003e502977%3A0x2afb78968f9a8c73!2sLivie%20kost!5e0!3m2!1sid!2sid!4v1718312000000!5m2!1sid!2sid"
               allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer"
-              title="Peta Lokasi Kos Lievi Tumbrep Bandar Kabupaten Batang"
+              title="Peta Lokasi Livie Kost Bandar Kabupaten Batang"
             />
           </div>
         </div>

@@ -29,7 +29,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
           </a>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             <a href="#home" className="text-sm font-semibold text-gray-600 transition-colors">
               Beranda
             </a>
@@ -53,7 +53,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
             </a>
           </div>
 
-          <div className="hidden md:flex items-center">
+          <div className="hidden lg:flex items-center">
             <a
               href="#kamar"
               className="px-5 py-2.5 bg-teal-700 text-white rounded-xl font-bold transition-all text-xs tracking-wider shadow-sm flex items-center gap-1.5"
@@ -66,7 +66,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
           {/* Mobile menu interface btn */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-gray-600 transition-colors rounded-lg focus:outline-none"
+            className="lg:hidden p-2 text-gray-600 transition-colors rounded-lg focus:outline-none"
             aria-label="Toggle Mobile Menu"
             id="mobile-menu-btn"
           >
@@ -79,7 +79,7 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
       {mobileMenuOpen && (
         <div
           id="drawer-overlay"
-          className="fixed inset-0 bg-black/40 backdrop-blur-xs z-50 md:hidden"
+          className="fixed inset-0 bg-black/40 backdrop-blur-xs z-50 lg:hidden"
           onClick={() => setMobileMenuOpen(false)}
         >
           <div

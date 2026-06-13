@@ -20,7 +20,7 @@ export default function App() {
   const [modalMainImg,   setModalMainImg]   = useState<string>("");
   const [bookingDate,    setBookingDate]    = useState<string>("");
   const [minDateString,  setMinDateString]  = useState<string>("");
-  const [openFaqId,      setOpenFaqId]      = useState<number | null>(1);
+  const [openFaqId,      setOpenFaqId]      = useState<number | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [scrolled,       setScrolled]       = useState<boolean>(false);
 

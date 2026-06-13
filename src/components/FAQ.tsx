@@ -10,14 +10,14 @@ interface FAQProps {
 export default function FAQ({ openFaqId, setOpenFaqId }: FAQProps) {
   return (
     <section id="faq" className="py-20 bg-white border-y border-gray-100 scroll-mt-12">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12">
-        <div className="md:col-span-4 lg:col-span-5 space-y-4 text-center md:text-left">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="lg:col-span-5 space-y-4 text-center lg:text-left">
           <span className="text-teal-700 font-extrabold text-xs tracking-widest uppercase block">CUSTOMER SUPPORT FAQ</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">Pertanyaan yang Sering Diajukan</h2>
           <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
             Masih ragu atau ingin tahu lebih dalam mengenai aturan main, sewa, serta jam malam Kos Lievi? Temukan jawbannya langsung di samping ini.
           </p>
-          <div className="pt-4 hidden md:block">
+          <div className="pt-4 hidden lg:block">
             <a
               href="#contact"
               className="inline-flex items-center gap-1.5 text-xs text-teal-700 font-bold tracking-wider uppercase border-b-2 border-teal-700/20 pb-0.5 transition-all"
@@ -28,7 +28,7 @@ export default function FAQ({ openFaqId, setOpenFaqId }: FAQProps) {
           </div>
         </div>
 
-        <div className="md:col-span-8 lg:col-span-7 space-y-4">
+        <div className="lg:col-span-7 space-y-4">
           {faqList.map((faq: FAQItem) => {
             const isOpen = openFaqId === faq.id;
             return (
