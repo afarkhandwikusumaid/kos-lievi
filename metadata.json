@@ -1,0 +1,6 @@
+{
+  "name": "Kos Lievi",
+  "description": "A clean, modern single-page website for Kos Lievi boarding house near UNDIP Batang, with interactive room details and WhatsApp booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
