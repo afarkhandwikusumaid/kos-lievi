@@ -131,23 +131,6 @@ export default function Hero({ onOpenRulesModal }: HeroProps) {
               />
             </div>
 
-            {/* Float badge: sertifikat tertib */}
-            <div
-              className="absolute top-4 -left-6 bg-white/95 backdrop-blur-xs p-3.5 rounded-xl
-                         shadow-lg border border-gray-50 flex items-center gap-3 animate-bounce
-                         shadow-teal-900/5"
-              style={{ animationDuration: "6s" }}
-            >
-              <div className="w-9 h-9 bg-teal-50 rounded-lg flex items-center justify-center
-                              text-teal-700 shrink-0">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <div>
-                <div className="text-xs font-extrabold text-gray-900">Sertifikat Tertib</div>
-                <div className="text-[10px] text-gray-400 font-medium">Tertib &amp; Nyaman Rapi</div>
-              </div>
-            </div>
-
             {/* Float badge: semua bisa dipesan */}
             <div
               className="absolute -bottom-6 -right-4 bg-white/95 backdrop-blur-xs p-4 rounded-xl
