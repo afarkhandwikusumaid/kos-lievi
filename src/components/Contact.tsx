@@ -35,9 +35,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-sm text-gray-900 mb-1">WhatsApp Pengelola</h4>
-                  <p className="text-xs text-gray-500 leading-relaxed mb-1 font-semibold">Nomor Resmi: +62 859-4462-9716</p>
+                  <p className="text-xs text-gray-500 leading-relaxed mb-1 font-semibold">Nomor Resmi: +62 857-4217-7446</p>
                   <a
-                    href={`https://wa.me/6285944629716?text=${encodeURIComponent(
+                    href={`https://wa.me/6285742177446?text=${encodeURIComponent(
                       "Halo Pengelola Kos Lievi, saya ingin tanya status kamar."
                     )}`}
                     target="_blank"

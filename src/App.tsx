@@ -71,7 +71,7 @@ export default function App() {
       `Apakah kamar ini masih kosong? Terima kasih.`
     ].join("\n");
 
-    window.open(`https://wa.me/6285944629716?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/6285742177446?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   // ── Render ─────────────────────────────────────────────────────────────────
