@@ -3,14 +3,11 @@ import { Star, Maximize, Bed, ShowerHead, Zap } from "lucide-react";
 import { Room } from "../data";
 
 interface RoomCardProps {
-  key?: React.Key; // diperlukan oleh @types/react versi lama
   room: Room;
   onOpenModal: (room: Room) => void;
 }
 
-// ── Component ─────────────────────────────────────────────────────────────────
-// Menampilkan satu kartu kamar dengan foto, spesifikasi singkat, harga, dan
-// tombol booking. Semua kamar berstatus "Tersedia" sehingga tombol selalu aktif.
+// Menampilkan satu kartu kamar dengan foto, spesifikasi singkat, harga, dan tombol booking.
 export default function RoomCard({ room, onOpenModal }: RoomCardProps) {
   return (
     <div
@@ -27,11 +24,11 @@ export default function RoomCard({ room, onOpenModal }: RoomCardProps) {
         />
       </div>
 
-      <div className="p-3 sm:p-6 flex flex-col flex-grow">
+      <div className="p-4 sm:p-6 flex flex-col flex-grow">
 
         {/* Nama kamar & rating */}
         <div className="flex items-center justify-between gap-2 mb-1.5 sm:mb-2">
-          <h3 className="text-sm sm:text-xl font-bold text-gray-900 truncate">{room.name}</h3>
+          <h3 className="text-base sm:text-xl font-bold text-gray-900 truncate">{room.name}</h3>
           <div className="flex items-center gap-0.5 text-amber-500 shrink-0">
             <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" />
             <span className="text-[10px] sm:text-xs font-bold text-gray-600">5.0</span>
@@ -39,17 +36,17 @@ export default function RoomCard({ room, onOpenModal }: RoomCardProps) {
         </div>
 
         {/* Subtitle singkat */}
-        <p className="text-[10px] sm:text-xs text-gray-400 mb-3 sm:mb-4 font-semibold line-clamp-1 sm:line-clamp-2">
+        <p className="text-[11px] sm:text-xs text-gray-400 mb-3 sm:mb-4 font-semibold">
           {room.subtitle}
         </p>
 
         {/* Spesifikasi cepat */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-1.5 sm:gap-y-2.5
+        <div className="grid grid-cols-2 gap-x-3 gap-y-1.5 sm:gap-y-2.5
                         pt-3 pb-3.5 sm:pt-4 sm:pb-5 border-t border-gray-100
                         text-[10px] sm:text-xs text-gray-500 mb-auto">
           <div className="flex items-center gap-1.5 min-w-0">
             <Maximize className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-teal-700 shrink-0" />
-            <span className="truncate">{room.specifications.ukuran}</span>
+            <span className="truncate">{room.specifications[0]}</span>
           </div>
           <div className="flex items-center gap-1.5 min-w-0">
             <Bed className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-teal-700 shrink-0" />

@@ -20,9 +20,11 @@ export default function Navbar({ mobileMenuOpen, setMobileMenuOpen, scrolled }: 
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 bg-teal-700 rounded-xl flex items-center justify-center text-white shadow-md shadow-teal-900/10 transition-transform">
-              <span className="font-extrabold text-base tracking-wider">KL</span>
-            </div>
+            <img
+              src="/icon/logokoslievi.png"
+              alt="Kos Lievi Logo"
+              className="w-9 h-9 object-contain rounded-xl"
+            />
             <span className="font-black text-xl tracking-tight text-gray-900 transition-colors uppercase">
               KOS <span className="text-teal-700">LIEVI</span>
             </span>

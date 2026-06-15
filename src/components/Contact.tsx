@@ -58,7 +58,7 @@ export default function Contact() {
                   <h4 className="font-bold text-sm text-gray-900 mb-1">Jam Terbaik Berkunjung</h4>
                   <p className="text-xs text-gray-500 leading-relaxed font-semibold">Setiap Hari: Jam 08:00 - 18:00 WIB</p>
                   <p className="text-[10px] text-gray-400 font-semibold mt-1">
-                    Harap menjdawalkan janji temu minimal 1 hari sebelumnya via WA pengelola.
+                    Harap menjadwalkan janji temu minimal 1 hari sebelumnya via WA pengelola.
                   </p>
                 </div>
               </div>

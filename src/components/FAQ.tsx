@@ -15,7 +15,7 @@ export default function FAQ({ openFaqId, setOpenFaqId }: FAQProps) {
           <span className="text-teal-700 font-extrabold text-xs tracking-widest uppercase block">CUSTOMER SUPPORT FAQ</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">Pertanyaan yang Sering Diajukan</h2>
           <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
-            Masih ragu atau ingin tahu lebih dalam mengenai aturan main, sewa, serta jam malam Kos Lievi? Temukan jawbannya langsung di samping ini.
+            Masih ragu atau ingin tahu lebih dalam mengenai aturan main, sewa, serta jam malam Kos Lievi? Temukan jawabannya langsung di samping ini.
           </p>
           <div className="pt-4 hidden lg:block">
             <a

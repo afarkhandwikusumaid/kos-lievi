@@ -8,9 +8,11 @@ export default function Footer() {
         
         {/* Logo Branding */}
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 bg-teal-700 rounded-lg flex items-center justify-center text-white">
-            <span className="font-extrabold text-xs tracking-wider">KL</span>
-          </div>
+          <img
+            src="/icon/logokoslievi.png"
+            alt="Kos Lievi Logo"
+            className="w-8 h-8 object-contain rounded-lg"
+          />
           <span className="font-black text-sm tracking-tight text-white uppercase">
             KOS <span className="text-teal-600">LIEVI</span>
           </span>

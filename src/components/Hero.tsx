@@ -125,7 +125,7 @@ export default function Hero({ onOpenRulesModal }: HeroProps) {
             <div className="overflow-hidden bg-white border border-gray-100 p-3 rounded-2xl
                             shadow-xl aspect-4/3 flex items-center justify-center">
               <img
-                src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80"
+                src="/image/imagekos1.avif"
                 alt="Interior kamar Kos Lievi yang rapi dan premium"
                 className="w-full h-full object-cover rounded-xl transition-transform duration-700"
               />
